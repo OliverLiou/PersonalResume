@@ -8,5 +8,7 @@ export default defineNuxtConfig({
     head: {
       title: "Oliver Liou | Resume",
     },
+    baseURL: process.env.NODE_ENV === "production" ? "/PersonalResume/" : "/",
+    buildAssetsDir: "/static/",
   },
 });
