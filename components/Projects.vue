@@ -1,7 +1,7 @@
 <template>
   <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white">Projects</h2>
+      <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white">{{ $options.title }}</h2>
       <div class="mt-10 grid md:grid-cols-2 gap-8">
         <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
           <h3 class="text-xl font-bold text-primary">Project One</h3>
@@ -17,3 +17,10 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  title: '專案分享',
+  href: '#projects'
+}
+</script>
