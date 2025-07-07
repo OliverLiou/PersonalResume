@@ -28,8 +28,8 @@
               <div class="text-sm text-gray-500 dark:text-gray-400 mb-2 font-semibold whitespace-nowrap">{{ experience.cardHeader }}</div>
               <h5 class="text-xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap">{{ experience.jobTitle }}</h5>
               <div class="text-gray-700 dark:text-gray-300 space-y-2">
-                <p class="whitespace-nowrap" v-for="jobDescription in experience.jobDescription" :key="jobDescription">
-                  • {{ jobDescription }}
+                <p class="whitespace-nowrap" v-for="achievement in experience.achievements" :key="achievement">
+                  • {{ achievement }}
                 </p>
               </div>
             </div>
@@ -52,29 +52,29 @@ const experiences = reactive([
   {
     cardHeader: '2017-2020(研發替代役)',
     jobTitle: '助理工程師',
-    jobDescription: [
-      '維運公司現行系統，確保穩定運作',
+    achievements: [
       '與使用者討論需求並負責實作',
-      '建立良好的需求溝通與開發基礎'
+      '建立良好的需求溝通與開發基礎',
+      '維運公司現行系統，確保穩定運作',
     ],
   },
   {
     cardHeader: '2021-2024',
     jobTitle: '工程師',
-    jobDescription: [
-      '自學MVC架構、EF Core、Vue2...等技術',
+    achievements: [
       '自研Azure CI/CD，且成功佈署多個專案',
+      '自學MVC架構、EF Core、Vue2...等技術',
       '學習並應用PowerAutomate與PowerApps'
     ]
   },
   {
     cardHeader: '2025-至今',
     jobTitle: '資深工程師',
-    jobDescription: [
-      '自學Vue3 + Nuxt3、TailwindCSS...等技術',
+    achievements: [
       '建立前後端模板，有效縮短開發時間',
+      '自學Vue3 + Nuxt3、TailwindCSS...等技術',
+      '後端加入Log機制，建立完整的異動紀錄追蹤',
       '持續開發與維運專案，包含快速報價、模具驗收...等系統',
-      '後端加入Log機制，建立完整的異動紀錄追蹤'
     ]
   }
 ])
