@@ -140,7 +140,7 @@ const backEndSkills = {
       icon: "devicon:csharp",
     },
     {
-      name: ".Net Core",
+      name: ".Net Core(5 ~ 8)",
       icon: "devicon:entityframeworkcore",
     },
     {
