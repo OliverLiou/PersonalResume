@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  name: 'EducationSection',
   title: '學歷',
   href: '#education'
 }

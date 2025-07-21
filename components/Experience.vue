@@ -8,12 +8,12 @@
       <div class="relative max-w-6xl mx-auto mt-12 px-4">
         <!-- 水平時間軸主線 -->
         <div class="relative h-20 mb-8">
-          <div class="absolute top-10 left-0 right-0 h-1 bg-gray-300 dark:bg-gray-600"></div>
+          <div class="absolute top-10 left-0 right-0 h-1 bg-gray-300 dark:bg-gray-600"/>
           
           <!-- 時間軸圓點 -->
-          <div class="absolute top-8 left-2 w-5 h-5 bg-gray-400 dark:bg-gray-500 border-4 border-white dark:border-gray-800 rounded-full shadow-lg"></div>
-          <div class="absolute top-8 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-gray-400 dark:bg-gray-500 border-4 border-white dark:border-gray-800 rounded-full shadow-lg"></div>
-          <div class="absolute top-8 right-2 w-5 h-5 bg-gray-400 dark:bg-gray-500 border-4 border-white dark:border-gray-800 rounded-full shadow-lg"></div>
+          <div class="absolute top-8 left-2 w-5 h-5 bg-gray-400 dark:bg-gray-500 border-4 border-white dark:border-gray-800 rounded-full shadow-lg"/>
+          <div class="absolute top-8 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-gray-400 dark:bg-gray-500 border-4 border-white dark:border-gray-800 rounded-full shadow-lg"/>
+          <div class="absolute top-8 right-2 w-5 h-5 bg-gray-400 dark:bg-gray-500 border-4 border-white dark:border-gray-800 rounded-full shadow-lg"/>
           
           <!-- 年份標籤 -->
           <div class="absolute top-0 left-2 text-sm font-semibold text-gray-600 dark:text-gray-400">2017</div>
@@ -28,7 +28,7 @@
               <div class="text-sm text-gray-500 dark:text-gray-400 mb-2 font-semibold whitespace-nowrap">{{ experience.cardHeader }}</div>
               <h5 class="text-xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap">{{ experience.jobTitle }}</h5>
               <div class="text-gray-700 dark:text-gray-300 space-y-2">
-                <p class="whitespace-nowrap" v-for="achievement in experience.achievements" :key="achievement">
+                <p v-for="achievement in experience.achievements" :key="achievement" class="whitespace-nowrap">
                   • {{ achievement }}
                 </p>
               </div>
@@ -42,6 +42,7 @@
 
 <script>
 export default {
+  name: "ExperienceSection",
   title: "工作經歷",
   href: "#experience",
 };

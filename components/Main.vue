@@ -9,7 +9,7 @@
               src="../assets/imgs/hcmf.png"
               alt="個人照片"
               class="w-full h-full object-cover"
-            />
+            >
           </div>
           <h1 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-3">
             Your Name
@@ -40,6 +40,7 @@
 
 <script>
 export default {
+  name: 'MainSection',
   title: '關於我',
   href: '#'
 }

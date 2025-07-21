@@ -11,10 +11,10 @@
       <div class="flex items-center space-x-6">
         <div class="hidden md:flex space-x-6">
           <a
-            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors duration-200"
             v-for="navBarItem in navBarItems"
             :key="navBarItem.title"
             :href="navBarItem.href"
+            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors duration-200"
           >
             {{ navBarItem.title }}
           </a>
@@ -27,6 +27,12 @@
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  name: "AppHeader",
+}
+</script>
 
 <script setup>
 const Main = resolveComponent("Main");

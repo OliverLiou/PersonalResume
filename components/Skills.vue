@@ -101,6 +101,7 @@
 
 <script>
 export default {
+  name: "SkillsSection",
   title: "技能",
   href: "#skills",
 };

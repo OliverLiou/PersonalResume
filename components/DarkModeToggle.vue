@@ -1,10 +1,10 @@
 <template>
   <button
-    @click="toggleDark"
     class="relative inline-flex items-center justify-center w-10 h-10 p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
     :class="{ 'opacity-50': !isInitialized }"
     :disabled="!isInitialized"
     aria-label="Toggle dark mode"
+    @click="toggleDark"
   >
     <Transition
       name="icon-fade"

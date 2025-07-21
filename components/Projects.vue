@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: 'ProjectSection',
   title: '專案分享',
   href: '#projects'
 }

@@ -14,5 +14,5 @@
 
 <script setup>
 // 初始化暗黑模式
-const { isInitialized } = useDarkMode()
+// const { isInitialized } = useDarkMode()
 </script>
