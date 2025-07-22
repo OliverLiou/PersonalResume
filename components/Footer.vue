@@ -5,7 +5,7 @@
       <div class="flex justify-center space-x-6 mt-4">
         <!-- Email -->
         <a 
-          href="mailto:your-email@example.com" 
+          href="mailto:cpsgang@gmail.com" 
           class="flex items-center space-x-2 hover:text-primary transition-colors duration-200 group"
           aria-label="Email"
         >
@@ -17,8 +17,6 @@
 
         <!-- LinkedIn -->
         <a 
-          href="https://linkedin.com/in/your-profile" 
-          target="_blank" 
           rel="noopener noreferrer"
           class="flex items-center space-x-2 hover:text-primary transition-colors duration-200 group"
           aria-label="LinkedIn"
@@ -31,7 +29,7 @@
 
         <!-- GitHub -->
         <a 
-          href="https://github.com/your-username" 
+          href="https://github.com/OliverLiou" 
           target="_blank" 
           rel="noopener noreferrer"
           class="flex items-center space-x-2 hover:text-primary transition-colors duration-200 group"

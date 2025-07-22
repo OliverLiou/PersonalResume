@@ -12,10 +12,10 @@
             >
           </div>
           <h1 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-3">
-            Your Name
+            劉亦剛
           </h1>
           <p class="text-base lg:text-lg text-gray-600 dark:text-gray-300 font-medium">
-            Full-Stack Developer | Tech Enthusiast
+            全端開發者 | 技術愛好者
           </p>
         </div>
 

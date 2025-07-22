@@ -6,7 +6,7 @@
       <a
         :href="Main.href"
         class="text-2xl font-bold text-primary dark:text-blue-400"
-        >Your Name</a
+        >個人履歷</a
       >
       <div class="flex items-center space-x-6">
         <div class="hidden md:flex space-x-6">
@@ -21,7 +21,7 @@
         </div>
         <div class="flex items-center space-x-3">
           <DarkModeToggle />
-          <LanguageSwitcher />
+          <!-- <LanguageSwitcher /> -->
         </div>
       </div>
     </nav>
