@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-gray-500 dark:bg-gray-900 text-white dark:text-gray-200 text-center py-6 transition-colors duration-300">
     <div class="container mx-auto">
-      <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+      <p>&copy; 2025 劉亦剛 版權所有</p>
       <div class="flex justify-center space-x-6 mt-4">
         <!-- Email -->
         <a 
