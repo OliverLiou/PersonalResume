@@ -22,3 +22,5 @@ logs
 .env
 .env.*
 !.env.example
+/favicon_io.zip
+/faviconio-logo.zip

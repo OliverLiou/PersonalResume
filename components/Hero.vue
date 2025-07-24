@@ -74,7 +74,8 @@
 <script setup>
 // Component metadata
 defineOptions({
-  name: 'HeroSection'
+  name: 'HeroSection',
+  href: '#'
 })
 
 </script>

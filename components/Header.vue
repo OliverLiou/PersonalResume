@@ -3,11 +3,16 @@
     class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-colors duration-300"
   >
     <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-      <a
-        :href="Main.href"
-        class="text-2xl font-bold text-primary dark:text-blue-400"
-        >個人履歷</a
-      >
+      <a :href="Hero.href" class="flex items-center space-x-2">
+        <img
+          src="../assets/imgs/logo.png"
+          alt="Logo"
+          class="h-8 w-auto md:h-10"
+        >
+        <span class="text-2xl font-bold text-primary pl-1 dark:text-blue-400 md:block">
+          個人履歷
+        </span>
+      </a>
       <div class="flex items-center space-x-6">
         <div class="hidden md:flex space-x-6">
           <a
@@ -35,7 +40,7 @@ export default {
 </script>
 
 <script setup>
-const Main = resolveComponent("Main");
+const Hero = resolveComponent("Hero");
 const Experience = resolveComponent("Experience");
 const Skills = resolveComponent("Skills");
 const Projects = resolveComponent("Projects");
