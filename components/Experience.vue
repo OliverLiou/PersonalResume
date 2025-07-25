@@ -29,15 +29,22 @@
                 <div class="experience-block">
                   <!-- 卡片標頭 -->
                   <div class="experience-block-header">
-                    <div class="experience-block-title bg-gradient-to-r from-blue-500 to-blue-600">
-                      <div class="flex items-center justify-between w-full">
+                    <div class="experience-block-title bg-gradient-to-r from-blue-300 to-blue-600">
+                      <div class="flex items-center justify-between w-full gap-3">
+                        <!-- 左側圖片區塊 -->
+                        <div class="experience-image-block flex-1">
+                          <img src="../assets/imgs/HCMF_Logo_White.png" alt="Logo" class="h-10 md:h-12 sm:h-8 w-auto">
+                        </div>
                         
-                        <h5 class="text-lg font-extrabold text-white">
-                          {{ experience.jobTitle }}
-                          <span class="text-sm font-semibold text-white">
-                            ({{ experience.cardHeader }})
+                        <!-- 右側文字區塊 -->
+                        <div class="experience-text-block flex-1 min-w-0">
+                          <h5 class="experience-job-title text-white font-extrabold leading-tight">
+                            {{ experience.jobTitle }}
+                          </h5>
+                          <span class="experience-period text-white font-semibold opacity-90">
+                            {{ experience.cardHeader }}
                           </span>
-                        </h5>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -127,6 +134,31 @@ const experiences = reactive([
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.experience-image-block {
+  @apply flex items-center;
+}
+
+.experience-text-block {
+  @apply text-right;
+}
+
+.experience-job-title {
+  @apply text-lg mb-1;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+.experience-period {
+  @apply text-sm;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .experience-block-title {
+    @apply p-3;
+  }
+}
+
 .experience-content {
   @apply p-4 space-y-3;
 }
@@ -164,57 +196,4 @@ const experiences = reactive([
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive design */
-/* @media (max-width: 768px) {
-  .experience-block-title {
-    @apply p-3;
-  }
-
-  .experience-block-title span,
-  .experience-block-title h5 {
-    @apply text-sm;
-  }
-
-  .experience-content {
-    @apply p-3 space-y-2;
-  }
-
-  .experience-item {
-    @apply p-2;
-  }
-
-  .experience-icon {
-    @apply w-5 h-5 mr-2;
-  }
-
-  .experience-text {
-    @apply text-xs;
-  }
-}
-
-@media (max-width: 640px) {
-  .experience-block-title {
-    @apply p-2 flex-col items-start gap-1;
-  }
-
-  .experience-block-title .flex {
-    @apply flex-col items-start gap-1 w-full;
-  }
-
-  .experience-content {
-    @apply p-2 space-y-1;
-  }
-
-  .experience-item {
-    @apply p-2;
-  }
-
-  .experience-icon {
-    @apply w-4 h-4 mr-2;
-  }
-
-  .experience-text {
-    @apply text-xs;
-  }
-} */
 </style>
