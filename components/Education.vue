@@ -6,7 +6,6 @@
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           {{ $options.title }}
         </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
       </div>
 
       <!-- 教育卡片 -->
@@ -18,22 +17,23 @@
             aria-labelledby="education-title"
           >
             <!-- 裝飾性漸變背景 -->
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/10 dark:to-purple-900/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/10 dark:to-purple-900/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
             
             <!-- 內容區域 -->
             <div class="relative z-10">
               <!-- 學校標題與圖標 -->
               <h3 id="education-title" class="flex flex-col sm:flex-row sm:items-center text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4 sm:mb-6">
                 <!-- 學校圖標容器 - 轉換自 .school-icon -->
-                <div class="flex items-center justify-center bg-white dark:bg-gray-700 rounded-xl shadow-md p-3 mb-3 sm:mb-0 sm:mr-4 w-fit transition-transform duration-300 ease-out hover:scale-110 hover:rotate-2 group-hover:shadow-lg">
+                <div class="flex items-center justify-center bg-white dark:bg-gray-700 rounded-xl shadow-md p-3 mb-3 sm:mb-0 sm:mr-4 w-fit transition-transform duration-300 ease-out hover:scale-110 group-hover:shadow-lg">
                   <img 
                     src="@/assets/imgs/MUST_LOGO.png" 
                     alt="明新科技大學校徽" 
                     class="w-12 h-8 sm:w-14 sm:h-10 object-contain"
                     loading="lazy"
                   >
+                  <span class="mx-3">{{ schoolName }}</span>
                 </div>
-                <span class="text-center sm:text-left">{{ schoolName }}</span>
+                
               </h3>
 
               <!-- 學位資訊 -->
@@ -63,7 +63,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-all duration-200 hover:underline decoration-2 underline-offset-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 rounded-md px-1 py-0.5"
-                      aria-label="開啟論文連結（在新視窗）"
+                      aria-label="開啟論文連結"
                     >
                       {{ paperTitle }}
                       <svg class="w-4 h-4 ml-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -95,6 +95,6 @@ const degree = '資訊管理學系碩士班';
 const startYear = '2015年09月';
 const graduationYear = '2017年06月';
 const paperTitle = '五回合自適應偵測診斷於超立方體';
-const paperLink = 'https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=JH_bqq/record?r1=1&h1=0#XXX'
+const paperLink = 'https://hdl.handle.net/11296/st8q2q'
 </script>
 
