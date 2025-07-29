@@ -11,85 +11,85 @@
         <!-- Three Skill Blocks -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Frontend Block -->
-          <div class="skill-block">
-            <div class="skill-block-header">
+          <div class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-black/30">
+            <div class="relative">
               <div
-                class="skill-block-title bg-gradient-to-r from-green-500 to-emerald-600"
+                class="flex items-center p-4 sm:p-3 md:p-4 lg:p-4 rounded-t-lg shadow-md bg-gradient-to-r from-green-500 to-emerald-600"
               >
                 <Icon
                   name="material-symbols:web"
                   size="24"
                   class="text-white"
                 />
-                <h3 class="text-lg font-bold text-white ml-3">{{ frontEnds.cardTitle }}</h3>
+                <h3 class="text-lg sm:text-base md:text-base lg:text-lg font-bold text-white ml-3 sm:ml-2 md:ml-3">{{ frontEnds.cardTitle }}</h3>
               </div>
             </div>
-            <div class="skill-list">
+            <div class="p-4 sm:p-3 md:p-3 lg:p-4 space-y-3 sm:space-y-2 md:space-y-2 lg:space-y-3">
               <div
                 v-for="(skill, index) in frontEnds.items"
                 :key="index"
-                class="skill-item"
+                class="flex items-center p-3 sm:p-2 md:p-2 lg:p-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:dark:bg-gray-600 hover:border-gray-300 hover:dark:border-gray-500 hover:transform hover:translate-x-1 hover:shadow-md group"
               >
-                <div class="skill-icon">
+                <div class="flex items-center justify-center w-10 h-10 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white dark:bg-gray-800 rounded-lg shadow-sm mr-3 sm:mr-2 md:mr-2 lg:mr-3 transition-transform duration-300 ease-in-out group-hover:scale-110">
                   <Icon :name="skill.icon" size="20" />
                 </div>
-                <div class="skill-name">{{ skill.name }}</div>
+                <div class="text-sm sm:text-xs md:text-xs lg:text-sm font-medium text-gray-900 dark:text-white flex-1 break-words">{{ skill.name }}</div>
               </div>
             </div>
           </div>
 
           <!-- Backend Block -->
-          <div class="skill-block">
-            <div class="skill-block-header">
+          <div class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-black/30">
+            <div class="relative">
               <div
-                class="skill-block-title bg-gradient-to-r from-purple-700 to-blue-900"
+                class="flex items-center p-4 sm:p-3 md:p-4 lg:p-4 rounded-t-lg shadow-md bg-gradient-to-r from-purple-700 to-blue-900"
               >
                 <Icon
                   name="material-symbols:dns"
                   size="24"
                   class="text-white"
                 />
-                <h3 class="text-lg font-bold text-white ml-3">{{ backEndSkills.cardTitle }}</h3>
+                <h3 class="text-lg sm:text-base md:text-base lg:text-lg font-bold text-white ml-3 sm:ml-2 md:ml-3">{{ backEndSkills.cardTitle }}</h3>
               </div>
             </div>
-            <div class="skill-list">
+            <div class="p-4 sm:p-3 md:p-3 lg:p-4 space-y-3 sm:space-y-2 md:space-y-2 lg:space-y-3">
               <div
                 v-for="(skill, index) in backEndSkills.items"
                 :key="index"
-                class="skill-item"
+                class="flex items-center p-3 sm:p-2 md:p-2 lg:p-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:dark:bg-gray-600 hover:border-gray-300 hover:dark:border-gray-500 hover:transform hover:translate-x-1 hover:shadow-md group"
               >
-                <div class="skill-icon">
+                <div class="flex items-center justify-center w-10 h-10 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white dark:bg-gray-800 rounded-lg shadow-sm mr-3 sm:mr-2 md:mr-2 lg:mr-3 transition-transform duration-300 ease-in-out group-hover:scale-110">
                   <Icon :name="skill.icon" size="20" />
                 </div>
-                <div class="skill-name">{{ skill.name }}</div>
+                <div class="text-sm sm:text-xs md:text-xs lg:text-sm font-medium text-gray-900 dark:text-white flex-1 break-words">{{ skill.name }}</div>
               </div>
             </div>
           </div>
 
           <!-- Others Block -->
-          <div class="skill-block">
-            <div class="skill-block-header">
+          <div class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-black/30">
+            <div class="relative">
               <div
-                class="skill-block-title bg-gradient-to-r from-gray-500 to-gray-700"
+                class="flex items-center p-4 sm:p-3 md:p-4 lg:p-4 rounded-t-lg shadow-md bg-gradient-to-r from-gray-500 to-gray-700"
               >
                 <Icon
                   name="material-symbols:settings"
                   size="24"
                   class="text-white"
                 />
-                <h3 class="text-lg font-bold text-white ml-3">{{ othersSkills.cardTitle }}</h3>
+                <h3 class="text-lg sm:text-base md:text-base lg:text-lg font-bold text-white ml-3 sm:ml-2 md:ml-3">{{ othersSkills.cardTitle }}</h3>
               </div>
             </div>
-            <div class="skill-list">
+            <div class="p-4 sm:p-3 md:p-3 lg:p-4 space-y-3 sm:space-y-2 md:space-y-2 lg:space-y-3">
               <div
                 v-for="(skill, index) in othersSkills.items"
                 :key="index"
-                class="skill-item"
+                class="flex items-center p-3 sm:p-2 md:p-2 lg:p-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 transition-all duration-300 ease-in-out hover:bg-gray-100 hover:dark:bg-gray-600 hover:border-gray-300 hover:dark:border-gray-500 hover:transform hover:translate-x-1 hover:shadow-md group"
               >
-                <div class="skill-icon">
+                <div class="flex items-center justify-center w-10 h-10 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white dark:bg-gray-800 rounded-lg shadow-sm mr-3 sm:mr-2 md:mr-2 lg:mr-3 transition-transform duration-300 ease-in-out group-hover:scale-110">
                   <Icon :name="skill.icon" size="20" />
                 </div>
-                <div class="skill-name">{{ skill.name }}</div>
+                <div class="text-sm sm:text-xs md:text-xs lg:text-sm font-medium text-gray-900 dark:text-white flex-1 break-words">{{ skill.name }}</div>
               </div>
             </div>
           </div>
@@ -185,113 +185,3 @@ const othersSkills = {
 };
 </script>
 
-<style scoped>
-.skill-block {
-  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-block:hover {
-  @apply transform -translate-y-1;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.skill-block-header {
-  @apply relative;
-}
-
-.skill-block-title {
-  @apply flex items-center p-4 rounded-t-lg;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.skill-list {
-  @apply p-4 space-y-3;
-}
-
-.skill-item {
-  @apply flex items-center p-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600;
-  transition: all 0.3s ease;
-}
-
-.skill-item:hover {
-  @apply bg-gray-100 dark:bg-gray-600 border-gray-300 dark:border-gray-500 transform translate-x-1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.skill-icon {
-  @apply flex items-center justify-center w-10 h-10 bg-white dark:bg-gray-800 rounded-lg shadow-sm mr-3;
-  transition: transform 0.3s ease;
-}
-
-.skill-item:hover .skill-icon {
-  @apply transform scale-110;
-}
-
-.skill-name {
-  @apply text-sm font-medium text-gray-900 dark:text-white flex-1;
-  word-wrap: break-word;
-}
-
-/* Dark mode enhancements */
-.dark .skill-block {
-  @apply border border-gray-700;
-}
-
-.dark .skill-block:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .skill-block-title {
-    @apply p-3;
-  }
-
-  .skill-block-title h3 {
-    @apply text-base;
-  }
-
-  .skill-list {
-    @apply p-3 space-y-2;
-  }
-
-  .skill-item {
-    @apply p-2;
-  }
-
-  .skill-icon {
-    @apply w-8 h-8 mr-2;
-  }
-
-  .skill-name {
-    @apply text-xs;
-  }
-}
-
-@media (max-width: 640px) {
-  .skill-block-title {
-    @apply p-2;
-  }
-
-  .skill-block-title h3 {
-    @apply text-sm ml-2;
-  }
-
-  .skill-list {
-    @apply p-2 space-y-1;
-  }
-
-  .skill-item {
-    @apply p-2;
-  }
-
-  .skill-icon {
-    @apply w-6 h-6 mr-2;
-  }
-
-  .skill-name {
-    @apply text-xs;
-  }
-}
-</style>

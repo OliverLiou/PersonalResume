@@ -26,22 +26,22 @@
 
               <!-- 經歷卡片 (統一右側顯示) -->
               <div class="ml-12 w-full">
-                <div class="experience-block">
+                <div class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-black/30">
                   <!-- 卡片標頭 -->
-                  <div class="experience-block-header">
-                    <div class="experience-block-title bg-gradient-to-r from-blue-300 to-blue-600">
+                  <div class="relative">
+                    <div class="flex items-center p-4 sm:p-3 rounded-t-lg bg-gradient-to-r from-blue-300 to-blue-600 shadow-sm">
                       <div class="flex items-center justify-between w-full gap-3">
                         <!-- 左側圖片區塊 -->
-                        <div class="experience-image-block flex-1">
+                        <div class="flex items-center flex-1">
                           <img src="../assets/imgs/HCMF_Logo_White.png" alt="Logo" class="h-10 md:h-12 sm:h-8 w-auto">
                         </div>
                         
                         <!-- 右側文字區塊 -->
-                        <div class="experience-text-block flex-1 min-w-0">
-                          <h5 class="experience-job-title text-white font-extrabold leading-tight">
+                        <div class="text-right flex-1 min-w-0">
+                          <h5 class="text-base md:text-lg sm:text-sm mb-1 text-white font-extrabold leading-tight break-words">
                             {{ experience.jobTitle }}
                           </h5>
-                          <span class="experience-period text-white font-semibold opacity-90">
+                          <span class="text-xs md:text-sm text-white font-semibold opacity-90 break-words">
                             {{ experience.cardHeader }}
                           </span>
                         </div>
@@ -50,16 +50,16 @@
                   </div>
                   
                   <!-- 卡片內容 -->
-                  <div class="experience-content">
+                  <div class="p-4 space-y-3">
                     <div
                       v-for="achievement in experience.achievements"
                       :key="achievement"
-                      class="experience-item"
+                      class="flex items-start p-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 transition-all duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-600 hover:border-gray-300 dark:hover:border-gray-500 hover:translate-x-1 hover:shadow-md group"
                     >
-                      <div class="experience-icon">
+                      <div class="flex items-center justify-center w-6 h-6 mr-3 mt-0.5 transition-transform duration-300 ease-in-out group-hover:scale-110">
                         <span class="text-blue-500 dark:text-blue-400">•</span>
                       </div>
-                      <div class="experience-text">{{ achievement }}</div>
+                      <div class="text-sm font-medium text-gray-900 dark:text-white flex-1 break-words">{{ achievement }}</div>
                     </div>
                   </div>
                 </div>
@@ -114,86 +114,3 @@ const experiences = reactive([
 
 </script>
 
-<style scoped>
-.experience-block {
-  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-block:hover {
-  @apply transform -translate-y-1;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.experience-block-header {
-  @apply relative;
-}
-
-.experience-block-title {
-  @apply flex items-center p-4 rounded-t-lg;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.experience-image-block {
-  @apply flex items-center;
-}
-
-.experience-text-block {
-  @apply text-right;
-}
-
-.experience-job-title {
-  @apply text-lg mb-1;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-}
-
-.experience-period {
-  @apply text-sm;
-  font-size: clamp(0.75rem, 2vw, 0.875rem);
-}
-
-/* Responsive adjustments */
-@media (max-width: 640px) {
-  .experience-block-title {
-    @apply p-3;
-  }
-}
-
-.experience-content {
-  @apply p-4 space-y-3;
-}
-
-.experience-item {
-  @apply flex items-start p-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600;
-  transition: all 0.3s ease;
-}
-
-.experience-item:hover {
-  @apply bg-gray-100 dark:bg-gray-600 border-gray-300 dark:border-gray-500 transform translate-x-1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.experience-icon {
-  @apply flex items-center justify-center w-6 h-6 mr-3 mt-0.5;
-  transition: transform 0.3s ease;
-}
-
-.experience-item:hover .experience-icon {
-  @apply transform scale-110;
-}
-
-.experience-text {
-  @apply text-sm font-medium text-gray-900 dark:text-white flex-1;
-  word-wrap: break-word;
-}
-
-/* Dark mode enhancements */
-.dark .experience-block {
-  @apply border border-gray-700;
-}
-
-.dark .experience-block:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-</style>

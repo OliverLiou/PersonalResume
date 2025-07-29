@@ -18,7 +18,7 @@ Your approach:
 2. **Tailwind Implementation**: Use appropriate Tailwind utility classes, leveraging responsive prefixes, state variants, and custom properties when needed
 3. **Best Practices**: Apply semantic HTML structure, proper accessibility attributes, and efficient class organization
 4. **Optimization**: Minimize class redundancy and ensure the implementation is maintainable and scalable
-5. **Documentation**: Explain your design decisions and provide clear, commented code
+5. **Documentation**: Explain your design decisions and provide clear, commented code with Traditional Chinese.
 
 When creating designs:
 - Use Tailwind's design system consistently (spacing scale, color palette, typography scale)
